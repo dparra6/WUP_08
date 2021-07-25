@@ -65,3 +65,16 @@ For the Multiple R-squared there was a big difference between both while headw b
 The adjusted R-squared being 0.5321 being the lowest one out of the 3. 
 
 
+```{r}
+headlen <- lm(LENGTH~HEADLEN,data=bears)
+plot(LENGTH~HEADLEN,data=bears)
+abline(headlen)
+summary.lm(headlen)
+```
+
+Finally the last measurement is going to be towards the bears headlenght. The residual standard error being 0.8463 having the highest residual standard error out of the 4. 
+
+The Multiple R-squared being 0.8463 also being the highest out of the 4. 
+
+Having the adjusted R-squared being 0.8434 also being the highest out of the 4. Having the headlen being the highest out of the others we have measured in this comparison. 
+
