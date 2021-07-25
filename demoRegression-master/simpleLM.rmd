@@ -51,5 +51,17 @@ While the multiple R-squared for the chest is 0.791 and having the neck compared
 Finally we can see the difference from the adjusted R-squared where for the chest is 0.7869 and compared to the adjusted R-squared for the neck is 0.7476 they are roughly around the same. 
 
 
+```{r}
+headw <- lm(LENGTH~HEADWTH,data=bears)
+plot(LENGTH~HEADWTH,data=bears)
+abline(headw)
+summary.lm(headw)
+```
+
+Starting on the Residual standard error we can see the rise from the headw being 7.32 and having the others being lower than the headw 
+
+For the Multiple R-squared there was a big difference between both while headw being 0.5409 while having both chest and neck having a bigger number. 
+
+The adjusted R-squared being 0.5321 being the lowest one out of the 3. 
 
 
